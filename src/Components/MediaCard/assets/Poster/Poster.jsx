@@ -1,15 +1,13 @@
 import React from "react";
 import "./Poster.css";
 
-function Poster() {
+function Poster({ url }) {
   return (
     <>
       <div className="celo_1"></div>
       <div className="celo_2"></div>
-      <div className="mediacard_border">
-        {/*  */}
-        Algo
-        {/*  */}
+      <div style={{ overflow: "hidden" }} className="mediacard_border">
+        <img src={url} alt="" />
       </div>
     </>
   );

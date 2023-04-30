@@ -3,7 +3,16 @@ import Cassette from "./Cassette/Cassette";
 import Poster from "./Poster/Poster";
 import "./MediaCard.css";
 
-const MediaCard = () => {
+const ExampleOBJ = {
+  img: "", //an URL String,
+  heading: "", // a String for the small top title
+  desc: "", //a String with the paragraph
+  title: "", // The small lower title
+  sub: "", //The subtitle
+  id: "", //The character on the casette
+};
+
+const MediaCard = ({ obj }) => {
   return (
     <>
       <div className="mediacard_content">
@@ -11,17 +20,14 @@ const MediaCard = () => {
           <div className="mediacard_card">
             <div className="mediacard_img-card"></div>
             <div className="mediacard_add-cart">
-              <h5>Sinopsis</h5>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-              delectus ipsa, ad labore, quod debitis, temporibus quo laboriosam
-              alias magnam eum suscipit dolores dolorem velit numquam blanditiis
-              iste animi vitae!
+              <h5>{obj.heading}</h5>
+              {obj.desc}
             </div>
             <div className="mediacard_info-card">
               <p>
-                <strong>Titulo</strong>
+                <strong>{obj.title}</strong>
               </p>
-              <p>Genero</p>
+              <p>{obj.sub}</p>
             </div>
           </div>
           <div
@@ -33,10 +39,10 @@ const MediaCard = () => {
               top: "15px",
             }}
           >
-            <Cassette label="Come PLantas"></Cassette>
+            <Cassette label={obj.id}></Cassette>
           </div>
           <div className="mediacard_cover">
-            <Poster></Poster>
+            <Poster url={obj.img}></Poster>
           </div>
         </div>
       </div>

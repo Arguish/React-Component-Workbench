@@ -8,7 +8,7 @@ function Home() {
         <h1 style={{ textAlign: "center" }}>Menú</h1>
         <div>
           <div className="flex flex-col items-center">
-            <CB comp={"Hello"}></CB>
+            <CB comp={"CasseteCard"}></CB>
           </div>
         </div>
       </div>

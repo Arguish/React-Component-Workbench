@@ -18,10 +18,10 @@ const Cassette = ({ label }) => {
               <div className="cas_tape"></div>
               <div className="cas_e_wheel"></div>
             </div>
-            <p className="cas_num">MF</p>
+            <p className="cas_num">{label}</p>
           </div>
           <div className="cas_or">
-            <p className="cas_time">{label}</p>
+            <p className="cas_time"></p>
           </div>
         </div>
         <div className="cas_card2_main">
