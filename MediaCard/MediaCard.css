@@ -1,0 +1,126 @@
+.mediacard_book {
+  border: 3px solid black;
+  position: relative;
+  border-radius: 10px;
+  width: 220px;
+  height: 300px;
+  background-color: #e90;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000;
+}
+
+.mediacard_cover {
+  border: 3px solid black;
+
+  top: 0;
+  position: absolute;
+  background-color: #e90;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.mediacard_book:hover .mediacard_cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+
+.mediacard_card {
+  margin: 10px 10px 0 0;
+  position: relative;
+  width: 210px;
+  height: 260px;
+  background: rgba(238, 155, 0, 0.33);
+  border: solid 4px #333;
+  box-shadow: 0px 0px #333;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mediacard_card:hover {
+  background: rgba(238, 155, 0);
+  transform: translateX(50px);
+  transition: all 500ms ease-in-out;
+}
+
+.mediacard_card .mediacard_img-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: filter 0.2s 0.2s ease-in-out;
+}
+
+.mediacard_add-cart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  background-color: rgba(238, 155, 0, 0.33);
+  text-align: center;
+  font-size: small;
+  overflow: scroll;
+  opacity: 1;
+}
+
+.mediacard_add-cart > h5 {
+  margin: 3px;
+}
+
+.mediacard_card .mediacard_info-card {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: solid 1px #333;
+  background-color: rgba(238, 155, 0, 0.33);
+}
+
+.mediacard_card .mediacard_info-card p {
+  font-size: 14px;
+  margin: 5px;
+}
