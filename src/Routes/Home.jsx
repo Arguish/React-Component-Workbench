@@ -9,6 +9,7 @@ function Home() {
         <div>
           <div className="flex flex-col items-center">
             <CB comp={"CasseteCard"}></CB>
+            <CB comp={"GameBoy"}></CB>
           </div>
         </div>
       </div>
