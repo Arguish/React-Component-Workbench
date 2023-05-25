@@ -9,9 +9,7 @@ function Home() {
           Componentes
         </h1>
         <div>
-          <div className="flex flex-col items-center">
-            <CB comp={"Placeholder"}></CB>
-          </div>
+          <CB comp={"QRCard"}></CB>
         </div>
       </div>
     </>
