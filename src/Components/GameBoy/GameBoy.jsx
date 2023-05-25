@@ -1,54 +1,6 @@
 import React from "react";
 
 function GameBoy() {
-  const contorno = {
-    width: "25em",
-    height: "43em",
-    borderRadius: "10px 10px 15% 10px",
-    backgroundColor: "antiquewhite",
-    padding: "2em",
-    boxSizing: "content-box",
-  };
-  const altavoz = {
-    border: "0.01px solid #212121",
-    backgroundColor: "#212121",
-    height: "80px",
-    width: "10px",
-    borderRadius: "10PX",
-    boxShadow: "-2px -2px 2px",
-  };
-  const altavozGroup = {
-    gridColumn: "5/7",
-    gridRow: "7",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    transform: "rotate(-30deg) translateX(10px) translateY(-5px)",
-  };
-  const pauseBtnTxt = {
-    margin: "0px",
-    fontFamily: "monospace",
-    color: "#494786",
-  };
-  const pauseBtn = {
-    width: "55px",
-    height: "15px",
-    borderRadius: "10PX",
-    backgroundColor: "#c4bebb",
-    boxShadow: "3px 3px 2px",
-  };
-  const ABtnTxt = {
-    margin: "0px",
-    fontFamily: "monospace",
-    color: "#494786",
-  };
-  const Abtn = {
-    width: "55px",
-    height: "55px",
-    borderRadius: "100%",
-    backgroundColor: "#9a2257",
-    boxShadow: "3px 3px 2px",
-  };
   return (
     <>
       <div style={contorno}>
@@ -84,7 +36,7 @@ function GameBoy() {
               alignItems: "flex-end",
             }}
           >
-            <h2 style={{ margin: "0px 3px", color: "#494786" }}>Marina </h2>
+            <h2 style={{ margin: "0px 3px", color: "#494786" }}>FullStack </h2>
             <h1
               style={{
                 margin: "0px 3px",
@@ -93,7 +45,7 @@ function GameBoy() {
                 fontSize: "35px",
               }}
             >
-              DEV GIRL
+              DEV BOY
             </h1>
             <h6 style={{ margin: "0px 3px", color: "#494786" }}>tm</h6>
           </div>
@@ -128,7 +80,6 @@ function GameBoy() {
           </div>
           <div
             style={{
-              border: "0.01px solid red",
               gridColumn: "1/3",
               gridRow: "5",
             }}
@@ -137,7 +88,6 @@ function GameBoy() {
           </div>
           <div
             style={{
-              border: "0.01px solid red",
               gridColumn: "3/4",
               gridRow: "6",
               display: "flex",
@@ -152,7 +102,6 @@ function GameBoy() {
           </div>
           <div
             style={{
-              border: "0.01px solid red",
               gridColumn: "4/5",
               gridRow: "6",
               display: "flex",
@@ -180,3 +129,52 @@ function GameBoy() {
 }
 
 export default GameBoy;
+
+const contorno = {
+  width: "25em",
+  height: "43em",
+  borderRadius: "10px 10px 15% 10px",
+  backgroundColor: "antiquewhite",
+  padding: "2em",
+  boxSizing: "content-box",
+};
+const altavoz = {
+  border: "0.01px solid #212121",
+  backgroundColor: "#212121",
+  height: "80px",
+  width: "10px",
+  borderRadius: "10PX",
+  boxShadow: "-2px -2px 2px",
+};
+const altavozGroup = {
+  gridColumn: "5/7",
+  gridRow: "7",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
+  transform: "rotate(-30deg) translateX(10px) translateY(-5px)",
+};
+const pauseBtnTxt = {
+  margin: "0px",
+  fontFamily: "monospace",
+  color: "#494786",
+};
+const pauseBtn = {
+  width: "55px",
+  height: "15px",
+  borderRadius: "10PX",
+  backgroundColor: "#c4bebb",
+  boxShadow: "3px 3px 2px",
+};
+const ABtnTxt = {
+  margin: "0px",
+  fontFamily: "monospace",
+  color: "#494786",
+};
+const Abtn = {
+  width: "55px",
+  height: "55px",
+  borderRadius: "100%",
+  backgroundColor: "#9a2257",
+  boxShadow: "3px 3px 2px",
+};
