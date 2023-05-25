@@ -10,7 +10,7 @@ function Home() {
         </h1>
         <div>
           <div className="flex flex-col items-center">
-            <CB comp={"CasseteCard"}></CB>
+            <CB comp={"Placeholder"}></CB>
           </div>
         </div>
       </div>

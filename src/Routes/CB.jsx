@@ -10,6 +10,7 @@ function CB({ comp }) {
           height: "75px",
           fontSize: "20px",
           margin: "3px",
+          borderRadius: "300px",
         }}
       >
         {comp}
