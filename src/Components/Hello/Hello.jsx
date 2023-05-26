@@ -1,7 +1,7 @@
 import React from "react";
 
-function Hello() {
-  return <h1 style={{ color: "antiquewhite" }}>ERROR DE RUTA</h1>;
+function Hello({ str = "Placeholder" }) {
+  return <h1 style={{ color: "antiquewhite" }}>{str}</h1>;
 }
 
 export default Hello;
