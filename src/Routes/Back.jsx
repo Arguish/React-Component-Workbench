@@ -6,7 +6,7 @@ function Back() {
     <div style={{ position: "fixed", bottom: "10px", left: "20px" }}>
       <div>
         <NavLink to="/">
-          <button className="bg-gray-400 rounded-full p-2 hover:ring-4 hover:ring-yellow-500">
+          <button className="bg-gradient-to-br from-gray-400 via-gray-200 to-gray-900 rounded-full p-2 hover:ring-4 hover:ring-yellow-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="25"
