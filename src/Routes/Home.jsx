@@ -10,7 +10,7 @@ function Home() {
         </h1>
         <div className="flex flex-col flex-wrap items-center">
           <CB comp={"Hello"}></CB>
-          <CB comp={"ProductPreviewCard"}></CB>
+          <CB comp={"ProductPreviewCard (WIP)"}></CB>
           <CB comp={"WindowData"}></CB>
           <CB comp={"QRCard"}></CB>
         </div>
