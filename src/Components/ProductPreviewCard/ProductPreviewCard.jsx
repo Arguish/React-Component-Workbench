@@ -17,22 +17,24 @@ const ProductPreviewCard = () => {
           alt=""
         />
         <div className="m-4 flex flex-col lg:w-1/2 lg:justify-around ">
-          <p className="text-gray-400 font-mono text-xs">Perfume</p>
-          <p className="my-2 font-serif font-bold text-2xl leading-5">
+          <p className="text-gray-400 font-Montserrat text-xs">Perfume</p>
+          <p className="my-2 font-Fraunces font-bold text-2xl leading-5">
             Gabriell Esence <br /> Eau De Parfum
           </p>
-          <p className="text-xs">
+          <p className="text-xs font-Montserrat text-gray-500">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
             excepturi, vel
           </p>
           <hr className="my-4 border-transparent " />
           <div className="flex align-top my-2">
-            <span className="font-bold text-2xl text-green-700">$149.99</span>
-            <span className="mx-4 line-through  text-gray-400  text-xs">
+            <span className="font-Fraunces text-2xl text-green-700">
+              $149.99
+            </span>
+            <span className="mx-4 font-Fraunces line-through  text-gray-400  text-xs">
               $169.99
             </span>
           </div>
-          <button className="py-2 block w-full rounded text-white text-sm bg-green-700">
+          <button className="py-2 block w-full rounded text-white text-sm bg-green-700 font-Montserrat">
             Add to Cart
           </button>
         </div>
