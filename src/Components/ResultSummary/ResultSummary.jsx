@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 
 const itemVariants = {
   desk: (i) => ({
-    width: [0, 524, 512],
+    width: [0, 270, 256],
   }),
   mov: (i) => ({
-    height: [0, 612, 600],
+    height: [0, 350, 340],
   }),
 };
 
@@ -15,7 +15,7 @@ const ResultSummary = () => {
   return (
     <motion.div animate={window.innerWidth > 768 ? "desk" : "mov"}>
       <motion.div
-        variants={itemVariants}
+        //variants={itemVariants}
         transition={{ ease: "easeOut", duration: 1 }}
         className=" bg-white md:rounded-xl  flex flex-col md:flex-row "
       >
@@ -32,12 +32,12 @@ const ResultSummary = () => {
           </p>
         </div>
         <motion.div
+          animate={{ opacity: [0, 0.75, 1] }}
           variants={itemVariants}
           transition={{
             ease: "easeOut",
-            duration: 1,
-            delay: 0.5,
-            delayChildren: 0.5,
+            duration: 1.5,
+            opacity: { delay: 0.5 },
           }}
           className="w-64 p-4 flex flex-col  md:justify-around"
         >
