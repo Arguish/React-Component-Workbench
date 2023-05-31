@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Home.jsx";
 import Back from "./Back.jsx";
 import Hello from "../Components/Hello/Hello.jsx";
+import RatingComp from "../Components/RatingComp/RatingComp.jsx";
 import ResultSummary from "../Components/ResultSummary/ResultSummary.jsx";
 import WindowData from "../Components/WindowData/WindowData.jsx";
 import ProductPreviewCard from "../Components/ProductPreviewCard/ProductPreviewCard.jsx";
@@ -22,6 +23,7 @@ function Public() {
             path="/ResultSummary"
             element={<ResultSummary></ResultSummary>}
           />
+          <Route path="/RatingComp" element={<RatingComp></RatingComp>} />
           <Route path="/Hello" element={<Hello></Hello>} />
           <Route
             path="/QRCard"
