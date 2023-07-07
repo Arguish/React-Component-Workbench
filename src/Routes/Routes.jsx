@@ -5,6 +5,7 @@ import Hello from "../Components/Hello/Hello.jsx";
 import ResultSummary from "../Components/ResultSummary/ResultSummary.jsx";
 import WindowData from "../Components/WindowData/WindowData.jsx";
 import ProductPreviewCard from "../Components/ProductPreviewCard/ProductPreviewCard.jsx";
+import Game from "../Components/Game/Game.jsx";
 import QRCard from "../Components/QRCard/QRCard.jsx";
 
 function Public() {
@@ -13,6 +14,7 @@ function Public() {
       <>
         <Routes>
           <Route path="/" element={<Home></Home>} />
+          <Route path="/Game" element={<Game></Game>} />
           <Route
             path="/ProductPreviewCard"
             element={<ProductPreviewCard></ProductPreviewCard>}
