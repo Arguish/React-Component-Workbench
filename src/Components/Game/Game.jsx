@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
+import useWrite from "../../Hooks/useWrite";
+
 const Game = () => {
   const [clic, setclic] = useState({ x: 0, y: 0 });
   const [mdown, setmdown] = useState({ x: 0, y: 0 });
   const [mdup, setmdup] = useState({ x: 0, y: 0 });
+
+  const [text1] = useWrite(lorem);
+  const [text2] = useWrite(lorem);
+  const [text3] = useWrite(lorem);
 
   const userCliked = (e) => {
     setclic({ x: e.clientX, y: e.clientY });
@@ -26,6 +32,9 @@ const Game = () => {
         userCliked(e);
       }}
     >
+      <div className="text-white">{text1}</div>
+      <div className="text-white">{text2}</div>
+      <div className="text-white">{text3}</div>
       <div
         className=" h-12 aspect-square  border-4 border-red-600 absolute cursor-none"
         style={{
@@ -45,3 +54,6 @@ const Game = () => {
 };
 
 export default Game;
+
+const lorem =
+  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa est sunt quod, beatae illo dolor quidem dolores earum perspiciatis assumenda! Sint, repellendus. Porro vitae quidem aspernatur quasi minima nostrum fuga.";
