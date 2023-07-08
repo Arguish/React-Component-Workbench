@@ -13,6 +13,7 @@ function Home() {
           <CB comp={"ResultSummary"}></CB>
           <CB comp={"ProductPreviewCard"}></CB>
           <CB comp={"Game"}></CB>
+          <CB comp={"Combate"}></CB>
           <CB comp={"WindowData"}></CB>
           <CB comp={"QRCard"}></CB>
         </div>

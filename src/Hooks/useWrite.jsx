@@ -1,9 +1,24 @@
 import React, { useState, useEffect } from "react";
 
-const useWrite = (input, time = 25) => {
+const useWrite = (msg, Go = true, time = 25) => {
+  const [input, setinput] = useState(msg);
   const [end, setend] = useState(false);
   const [text, settext] = useState("");
   const [letter, setletter] = useState(0);
+  const [canGo, setcanGo] = useState(Go);
+
+  const newMsg = (str) => {
+    reset();
+    setinput(str);
+  };
+
+  const playPause = () => {
+    setcanGo(!canGo);
+  };
+
+  const reset = () => {
+    setletter(0);
+  };
 
   const lenshow = () => {
     if (letter <= input.length) {
@@ -19,7 +34,7 @@ const useWrite = (input, time = 25) => {
 
   useEffect(() => {
     const timerID = setInterval(() => {
-      if (!end) {
+      if (!end && canGo) {
         lenshow();
         textChop();
       }
@@ -30,7 +45,7 @@ const useWrite = (input, time = 25) => {
     };
   });
 
-  return [text];
+  return [text, playPause, reset, newMsg];
 };
 
 export default useWrite;
